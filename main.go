@@ -33,6 +33,11 @@ func main() {
 			}
 			results := resp.Results
 
+			if len(results) == 0 {
+				log.Println("results not found")
+				break
+			}
+
 			// shuffle
 			n := len(results)
 			for i := n - 1; i >= 0; i-- {
