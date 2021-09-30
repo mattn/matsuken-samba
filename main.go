@@ -63,6 +63,8 @@ func main() {
 					log.Println(err)
 				}
 				played, played[0] = append(played[:1], played[0:]...), result.PreviewUrl
+			} else {
+				played, played[0] = append(played[:1], played[0:]...), ""
 			}
 		}
 	}
