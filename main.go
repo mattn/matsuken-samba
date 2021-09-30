@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"math/rand"
+	"os"
 	"time"
 
 	itunessearch "github.com/mattn/itunes-search-api"
@@ -12,9 +13,10 @@ import (
 
 func main() {
 	var country string
-	var titles []string
 	flag.StringVar(&country, "country", "JP", "country")
 	flag.Parse()
+
+	titles := os.Args[1:]
 
 	// use マツケンサンバ for default title
 	if len(titles) == 0 {
