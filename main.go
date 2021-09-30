@@ -49,11 +49,12 @@ func main() {
 			newIndex := -1
 			for _, result := range results {
 				for i, p := range played {
-					if p != result.PreviewUrl {
+					if i < len(results) && p != result.PreviewUrl {
 						newIndex = i
 					}
 				}
 			}
+
 			if newIndex != -1 {
 				result := results[newIndex]
 				fmt.Printf("%s: %s\n%s\n", result.ArtistName, result.TrackName, result.CollectionViewUrl)
