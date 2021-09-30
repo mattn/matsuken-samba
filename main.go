@@ -14,12 +14,12 @@ func main() {
 	var country string
 	var titles []string
 	flag.StringVar(&country, "country", "JP", "country")
+	flag.Parse()
 
+	// use マツケンサンバ for default title
 	if len(titles) == 0 {
 		titles = append(titles, "マツケンサンバ")
 	}
-
-	flag.Parse()
 
 	rand.Seed(time.Now().Unix())
 	played := make([]string, 10)
@@ -37,6 +37,8 @@ func main() {
 				j := rand.Intn(i + 1)
 				results[i], results[j] = results[j], results[i]
 			}
+
+			// skip URLs already played in 10 sounds
 			newIndex := -1
 			for _, result := range results {
 				for i, p := range played {
