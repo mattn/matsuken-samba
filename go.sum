@@ -1,0 +1,4 @@
+github.com/mattn/go-soundplayer v0.0.1 h1:mPhWeftbKxuZRYGfbFIFHvzYEA6FYzPDGX5Se4fCttI=
+github.com/mattn/go-soundplayer v0.0.1/go.mod h1:QV2M2YNr5w2iZJfd7vCWsnzwYN/RMTxHLcYyn2AVCDE=
+github.com/mattn/itunes-search-api v0.0.0-20170710154729-c9bc66f07ec7 h1:UUiq4D9+cKDnCPVM7MzsKm4qhq/xFxVZ+ncS0hrX048=
+github.com/mattn/itunes-search-api v0.0.0-20170710154729-c9bc66f07ec7/go.mod h1:1dKRfyU275+zqqoz8EA8YCqjQm8DJxDAb02S4WKKaeY=
